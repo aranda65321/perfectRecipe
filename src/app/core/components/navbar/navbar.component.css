@@ -1,5 +1,5 @@
 .navbar-container {
-  height: 70px;
+  height: 100px;
   width: 100%;
   background-color: var(--default-navbar-background-color);
 }
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #DEE2E6;
+  border-bottom: 1px solid var(--default-navbar-border-color);
 }
 
 .profile-actions-container {
@@ -84,13 +84,14 @@
 
 .sidebar-small-img-logo {
   object-fit: cover;
-  height: 45px;
+  height: 25px;
+  margin: 15px;
 }
 
 .logo-container {
   width: 300px;
   border-bottom: 1px solid var(--default-sidebar-header-border-color);
-  background-color: var(--default-menu-background-color);
+  background-color: var(--default-navbar-logo-background-color);
   color: var(--default-menu-option-color);
   display: flex;
   flex-direction: row;
@@ -99,7 +100,7 @@
 }
 
 .logo-small-container {
-  background-color: var(--default-menu-background-color);
+  background-color: var(--default-navbar-logo-background-color);
   color: var(--default-menu-option-color);
   display: flex;
   flex-direction: row;

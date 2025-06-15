@@ -1,0 +1,22 @@
+.header-menu-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu-items-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header-menu-item-container {
+  margin: 0px 20px 0px 20px;
+}
+
+.header-menu-item-label {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "roboto";
+}

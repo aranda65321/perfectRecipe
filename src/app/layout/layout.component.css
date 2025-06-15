@@ -13,6 +13,8 @@
 .layout-header-content-container {
   width: 100%;
   display: flex;
+  position: absolute;
+  z-index: 2;
 }
 
 .header-container {

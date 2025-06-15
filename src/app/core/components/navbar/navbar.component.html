@@ -1,18 +1,19 @@
 <div class="navbar-container">
   <div class="navbar-content">
-    <div *ngIf="showBigHeader" class="sidebar-logo-container">
-      <div class="logo-container">
-        <img class="sidebar-img-logo" [src]="domainConfiguration !== undefined ? domainConfiguration.logoPath:''" />
-        <label class="domain-name-first-label">{{getNameSiteFirstPart(domainConfiguration.nameSite)}}</label>
-        <label class="domain-name-second-label">{{getNameSiteFirstPart(domainConfiguration.nameSite)}}</label>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sidebar-logo-small-container"></div>
+        <div class="logo-small-container">
+          <img class="sidebar-small-img-logo"
+            [src]="domainConfiguration !== undefined ? domainConfiguration.logoPath:''" />
+          <label class="domain-name-first-label">{{getNameSiteFirstPart(domainConfiguration.nameSite)}}</label>
+          <label class="domain-name-second-label">{{getNameSiteSecondPart(domainConfiguration.nameSite)}}</label>
+        </div>
       </div>
-    </div>
-    <div *ngIf="!showBigHeader" class="sidebar-logo-small-container">
-      <div class="logo-small-container">
-        <img class="sidebar-small-img-logo"
-          [src]="domainConfiguration !== undefined ? domainConfiguration.logoPath:''" />
-        <label class="domain-name-first-label">{{getNameSiteFirstPart(domainConfiguration.nameSite)}}</label>
-        <label class="domain-name-second-label">{{getNameSiteSecondPart(domainConfiguration.nameSite)}}</label>
+      <div class="col-md-4">
+        <header-menu-component [menusParent]="menusParent"></header-menu-component>
+      </div>
+      <div class="col-md-4">
       </div>
     </div>
   </div>

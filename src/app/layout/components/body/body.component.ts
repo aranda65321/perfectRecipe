@@ -7,7 +7,6 @@ import { MenuDto } from '../../../core/domain/dto/MenuDto';
   styleUrl: './body.component.css'
 })
 export class BodyComponent {
-  @Input() menusParent: MenuDto[] = [];
 
   constructor() { }
 

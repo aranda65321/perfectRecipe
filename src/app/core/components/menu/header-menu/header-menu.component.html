@@ -1,1 +1,7 @@
-<p>header-menu works!</p>
+<div class="header-menu-container">
+  <div class="header-menu-items-container">
+    <div *ngFor="let menu of menusParent" class="header-menu-item-container">
+      <label class="header-menu-item-label" (click)="eventClickMenu(menu)">{{menu.name}}</label>
+    </div>
+  </div>
+</div>

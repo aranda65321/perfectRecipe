@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { DomainDto } from '../../../core/domain/dto/DomainDto';
+import { MenuDto } from '../../../core/domain/dto/MenuDto';
 
 @Component({
   selector: 'header-component',
@@ -8,6 +9,7 @@ import { DomainDto } from '../../../core/domain/dto/DomainDto';
 })
 export class HeaderComponent {
   @Input() domainConfiguration: DomainDto = {}
+  @Input() menusParent: MenuDto[] = [];
 
 
   constructor() {

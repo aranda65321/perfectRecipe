@@ -2,11 +2,12 @@
 @import "primeng/resources/primeng.css";
 
 :root {
-  --default-body-background-color: #f4f5fa;
+  --default-body-background-color: rgb(255, 255, 255);
   --default-text-color: rgb(46 38 61 / 0.9);
   --default-spinner-background: #FFD64C !important;
-  --default-navbar-background-color: #f4f5fa;
-  --default-navbar-border-color: #12101D;
+  --default-navbar-background-color: transparent;
+  --default-navbar-logo-background-color: transparent;
+  --default-navbar-border-color: transparent;
   --default-navbar-color: rgb(46 38 61 / 0.9);
   --profile-circle-background-color: #7852cc;
   --profile-circle-color: #FFFFFF;
