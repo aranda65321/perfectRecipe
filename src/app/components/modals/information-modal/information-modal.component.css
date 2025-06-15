@@ -1,0 +1,45 @@
+.information-modal-container {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans 3";
+}
+
+.information-modal-title-container {
+  padding: 40px 30px 10px 30px;
+}
+
+.information-modal-title-label {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.information-modal-body-container {
+  padding: 10px 30px 10px 30px;
+}
+
+.information-modal-body-label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.information-modal-content-container {
+  padding-top: 20px;
+}
+
+.information-modal-actions-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 35px;
+  padding-right: 40px;
+}
+
+.information-modal-accept-button {
+  margin: 10px;
+  border-radius: 24px;
+  width: 150px;
+  height: 47px;
+  border: transparent;
+}

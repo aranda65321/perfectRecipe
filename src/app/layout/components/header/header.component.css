@@ -1,0 +1,236 @@
+.card-img {
+  position: relative;
+  height: 840px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: brightness(50%) contrast(100%);
+}
+
+.card-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.div-header {
+  position: absolute;
+  width: 40%;
+  left: 10%;
+}
+
+h1 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 62px;
+  color: white;
+}
+
+h2 {
+  font-family: "poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  line-height: 1.5;
+  max-height: 6em;
+  min-height: 6em;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-family: "poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #F77F7F;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.button-primary {
+  background-color: #FFD64C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 153px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 40px;
+  transition: all 0.3s ease;
+  /* Añadido para animación suave */
+}
+
+/* Efecto hover */
+.button-primary:hover {
+  background-color: #ffcc00;
+  /* Cambio de color al pasar el mouse */
+  box-shadow: 0 0 10px 3px rgba(255, 214, 76, 0.7);
+  /* Resplandor */
+}
+
+
+.button-primary span {
+  font-weight: bold;
+}
+
+.button-play {
+  background-color: #F77F7F;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-icon {
+  position: relative;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-left: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.play-text {
+  font-size: 17;
+  font-weight: bold;
+  font-family: "inter", serif;
+  color: white;
+}
+
+.button-mas {
+  font-size: 17;
+  font-weight: bold;
+  font-family: "inter", serif;
+}
+
+.mat-dialog-container {
+  border-radius: 0 !important;
+  /* Elimina los bordes redondeados */
+}
+
+@media (max-width: 768px) {
+
+  .div-header {
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    /* Centra el texto */
+  }
+
+  h1 {
+    font-size: 40px;
+    /* Reduce el tamaño para móviles */
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 16px;
+    /* Reduce el tamaño */
+    line-height: 1.4;
+    max-height: none;
+    /* Permite mayor flexibilidad en altura */
+    min-height: auto;
+    /* Ajusta la altura mínima */
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    /* Ajusta el tamaño para móviles */
+    padding-top: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    /* Alinea botones en columna */
+    align-items: center;
+    /* Centra los botones */
+    gap: 15px;
+    /* Espaciado entre botones */
+  }
+
+  .button-primary {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    max-width: 200px;
+    /* Tamaño máximo razonable */
+    height: 48px;
+    /* Ajusta altura para móvil */
+    font-size: 14px;
+    /* Tamaño de texto reducido */
+    margin-right: 0;
+    /* Quita márgenes adicionales */
+  }
+
+  .button-primary:hover {
+    background-color: #ffcc00;
+    /* Conserva el efecto hover */
+    box-shadow: 0 0 8px 2px rgba(255, 214, 76, 0.7);
+  }
+
+  .button-play {
+    width: 48px;
+    /* Ajusta el tamaño para móvil */
+    height: 48px;
+  }
+
+  .play-icon {
+    left: 6px;
+    /* Ajusta posición del icono */
+    width: 16px;
+    height: 16px;
+    border-left: 8px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+
+  .play-text {
+    font-size: 14px;
+    /* Ajusta tamaño del texto */
+  }
+
+  .button-mas {
+    font-size: 14px;
+    /* Ajusta tamaño del texto */
+  }
+}
+
+
+:host ::ng-deep .header-galeria .p-galleria-item-prev {
+  z-index: 999 !important;
+}
+
+:host ::ng-deep .header-galeria .p-galleria-indicator button {
+  background-color: #F77F7F;
+  border-color: #F77F7F;
+  border-radius: 100%;
+}

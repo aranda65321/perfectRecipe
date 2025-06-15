@@ -1,0 +1,33 @@
+<div [ngClass]="showSidebar ? 'menu-toggle-container':'menu-toggle-container-close'" (click)="menuToggleEvent()">
+  <i class="pi menu-toggle-icon" [ngClass]="showSidebar ? 'pi-chevron-left':'pi-chevron-right'"></i>
+</div>
+<div *ngIf="showSidebar" class="left-menu-container">
+  <div class="search-section-container">
+    <div class="input-search-container">
+      <p-iconField class="search-input">
+        <p-inputIcon styleClass="pi pi-search" />
+        <input type="text" pInputText placeholder="Buscar" />
+      </p-iconField>
+    </div>
+  </div>
+  <div class="left-menu-option-container">
+    <div *ngIf="showBackChildren" class="back-menu-container" (click)="reloadMenuParents()">
+      <i class="pi pi-chevron-left back-menu-icon"></i>
+      <label class="back-menu-label">Regresar</label>
+    </div>
+    <div *ngFor="let menu of menus" [ngClass]="hasChilds(menu) ? 'left-menu-option':'left-menu-option-without-childs'">
+      <div [ngClass]="!hasChilds(menu) ? 'menu-option-container-left':'menu-option-container'"
+        class="menu-option-container">
+        <i *ngIf="!hasChilds(menu)" class="left-menu-icon-has-child "></i>
+        <div (click)="eventClickMenu(menu)" class="left-menu-option-info-container">
+          <i class="left-menu-option-icon" [ngClass]="menu.iconClass"></i>
+          <label class="left-menu-option-label">{{menu.name}}</label>
+        </div>
+        <i *ngIf="hasChilds(menu)" class="right-menu-icon-has-child pi pi-chevron-right"
+          (click)="eventClickMenu(menu)"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<left-small-menu [show]="!showSidebar" [menus]="menus"></left-small-menu>

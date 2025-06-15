@@ -1,0 +1,124 @@
+.navbar-container {
+  height: 70px;
+  width: 100%;
+  background-color: var(--default-navbar-background-color);
+}
+
+.navbar-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.profile-actions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.profile-action-label-container {
+  display: flex;
+  padding: 5px;
+  width: 120px;
+}
+
+.profile-action-label {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--default-navbar-color);
+}
+
+
+.profile-action-user-icon-container {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  background: var(--profile-circle-background-color);
+  color: var(--profile-circle-color);
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.show-profile-options-container {
+  display: flex;
+  padding: 5px;
+}
+
+
+.button-show-profile-options {
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-navbar-color);
+}
+
+
+.icon-user {
+  font-size: 25px;
+}
+
+
+.logo-container {
+  width: 300px;
+}
+
+.sidebar-logo-container {
+  width: 300px;
+}
+
+.sidebar-logo-small-container {}
+
+.sidebar-img-logo {
+  object-fit: cover;
+  height: 45px;
+}
+
+.sidebar-small-img-logo {
+  object-fit: cover;
+  height: 45px;
+}
+
+.logo-container {
+  width: 300px;
+  border-bottom: 1px solid var(--default-sidebar-header-border-color);
+  background-color: var(--default-menu-background-color);
+  color: var(--default-menu-option-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-small-container {
+  background-color: var(--default-menu-background-color);
+  color: var(--default-menu-option-color);
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 5px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-header-container {}
+
+.domain-name-first-label {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "roboto";
+}
+
+.domain-name-second-label {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(179, 89, 73);
+  font-family: "roboto";
+}

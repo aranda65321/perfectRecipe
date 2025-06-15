@@ -1,0 +1,14 @@
+.left-menu-small-container {
+  width: 70px;
+  border-right: 1px solid #DEE2E6;
+  background-color: var(--default-menu-background-color);
+  color: var(--default-menu-option-color);
+  height: 100%;
+}
+
+.left-menu-small-option-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}

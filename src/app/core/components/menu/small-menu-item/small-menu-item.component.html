@@ -1,0 +1,25 @@
+<div *ngIf="showChilds && menu.children !== undefined && menu.children.length > 0" class="small-childs-container">
+  <div class="small-childs-content-container" (mouseleave)="mouseleave()">
+    <div class="small-child-item" *ngIf="showBackChildren" (click)="reloadMenus()">
+      <i class="pi pi-chevron-left back-menu-icon"></i>
+      <label class="back-menu-label">Regresar</label>
+    </div>
+    <div *ngFor="let menuChild of menuChilds">
+      <div class="small-child-item" (click)="eventClickMenu(menuChild)">
+        <div class="small-menu-option-container">
+          <i [ngClass]="menuChild.iconClass"></i>
+          <label class="small-menu-option-label">{{menuChild.name}}</label>
+        </div>
+        <i *ngIf="menuChild.children !== undefined && menuChild.children.length > 0 " class="pi pi-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="left-menu-small-option" (click)="mouseEnter()">
+  <div class="left-menu-small-option-icon-container">
+    <i *ngIf="menu.url === undefined || menu.url === ''" class="left-menu-small-option-icon"
+      [ngClass]="menu.iconClass"></i>
+    <a *ngIf="menu.url !== undefined && menu.url !== ''" class="link-menu" [href]="menu.url"><i
+        class="left-menu-small-option-icon" [ngClass]="menu.iconClass"></i></a>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div *ngIf="show" class="left-menu-small-container">
+  <div class="left-menu-small-option-container">
+    <div *ngFor="let menu of menus">
+      <small-menu-item [menu]="menu"></small-menu-item>
+    </div>
+  </div>
+</div>
