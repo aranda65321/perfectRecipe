@@ -65,6 +65,9 @@ import { FooterComponent } from './layout/components/footer/footer.component';
 import { HeaderComponent } from './layout/components/header/header.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './pages/home/home.component';
+import { TrendingRecipeComponent } from './components/sections/trending-recipe/trending-recipe.component';
+import { BlogComponent } from './components/sections/blog/blog.component';
+import { ExploreRecipeComponent } from './components/sections/explore-recipe/explore-recipe.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +83,9 @@ import { HomeComponent } from './pages/home/home.component';
     InformationModalComponent,
     HeaderMenuComponent,
     HomeComponent,
+    TrendingRecipeComponent,
+    BlogComponent,
+    ExploreRecipeComponent,
   ],
   imports: [
     BrowserModule,

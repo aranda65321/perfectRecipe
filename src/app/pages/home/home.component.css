@@ -1,5 +1,5 @@
 .home-banner-container {
-  height: 510px;
+  height: 600px;
   display: flex;
   flex-direction: row;
 }
@@ -12,13 +12,56 @@
   width: 100%;
 }
 
+.home-banner-dish-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.home-banner-dish-img {
+  height: 400px;
+  position: fixed;
+  margin-top: -136px;
+}
+
 .home-banner-body-container {
   width: 100%;
   z-index: 2;
   padding: 20px;
   display: flex;
   position: absolute;
-  height: 510px;
+  height: 600px;
   justify-content: center;
   flex-direction: column;
+}
+
+.home-banner-title-container {
+  margin-top: 70px;
+  margin-left: 90px;
+}
+
+.home-banner-title-label {
+  font-weight: 700;
+  font-family: "roboto";
+  font-size: 42px;
+  line-height: 38px;
+}
+
+.home-banner-title-label-red {
+  color: rgb(182, 97, 86);
+}
+
+.home-banner-slogan-container {
+  width: 700px;
+}
+
+
+.home-banner-label {
+  font-weight: 400;
+  font-family: "roboto";
+  font-size: 22px;
+  line-height: 24px;
+  color: rgb(134, 134, 134);
+  margin-top: 50px;
+  margin-left: 90px;
 }
